@@ -1,0 +1,623 @@
+[
+    {
+        "id": "AC001",
+        "nombre": "Aire Acondicionado Bgh 2300f",
+        "categoria": "Climatizacion",
+        "precio": "150.000",
+        "color": "blanco",
+        "origen": "Argentina",
+        "img": "../img/aire_acondicionado_bgh_2300f.jpg"
+    },
+    {
+        "id": "AC002",
+        "nombre": "Aire Acondicionado Bgh 3000f",
+        "categoria": "Climatizacion",
+        "precio": "200.000",
+        "color": "",
+        "origen": "Argentina",
+        "img": "../img/aire_acondicionado_bgh_3000f.jpg"
+    },
+    {
+        "id": "AC003",
+        "nombre": "Aire Acondicionado Bgh 4400f",
+        "categoria": "climatizacion",
+        "precio": "250.000",
+        "color": "blanco",
+        "origen": "Argentina",
+        "img": "../img/aire_acondicionado_bgh_4400f.jpg"
+    },
+    {
+        "id": "AC004",
+        "nombre": "Aire Acondicionado Bgh 5500f",
+        "categoria": "climatizacion",
+        "precio": "300.000",
+        "color": "blanco",
+        "origen": "Argentina",
+        "img": "../img/aire_acondicionado_bgh_5500f.jpg"
+    },
+    {
+        "id": "AC005",
+        "nombre": "Aire Acondicionado 6800f",
+        "categoria": "climatizacion",
+        "precio": "450.000",
+        "color": "negro",
+        "origen": "Argentina",
+        "img": "../img/aire_acondicionado_bgh_6800f.jpg"
+    },
+    {
+        "id": "AC006",
+        "nombre": "Aire Acondicionado Samsung 2700f",
+        "categoria": "climatizacion",
+        "precio": "200.000",
+        "color": "blanco",
+        "origen": "Argentina",
+        "img": "../img/aire_acondicionado_samsung_2700f.jpg"
+    },
+    {
+        "id": "AC007",
+        "nombre": "Aire Acondicionado Samsung 4200f",
+        "categoria": "climatizacion",
+        "precio": "300.000",
+        "color": "blanco",
+        "origen": "Argentina",
+        "img": "../img/aire_acondicionado_samsung_4200f.jpg"
+    },
+    {
+        "id": "AC008",
+        "nombre": "Aire Acondicionado Samsung 5000f",
+        "categoria": "climatizacion",
+        "precio": "400.000",
+        "color": "negro",
+        "origen": "mexico",
+        "img": "../img/aire_acondicionado_samsung_5000f.jpg"
+    },
+    {
+        "id": "AC008",
+        "nombre": "Aire Acondicionado Lg 3000f",
+        "categoria": "climatizacion",
+        "precio": "250.000",
+        "color": "gris",
+        "origen": "mexico",
+        "img": "../img/aire_acondicionado_lg_3000f.jpg"
+    },
+    {
+        "id": "AC009",
+        "nombre": "Calefactor Liliana",
+        "categoria": "climatizacion",
+        "precio": "90.000",
+        "color": "blanco",
+        "origen": "mexico",
+        "img": "../img/calefactor_liliana.jpg"
+    },
+    {
+        "id": "AC0010",
+        "nombre": "Calefactor Longvie 2000w",
+        "categoria": "climatizacion",
+        "precio": "120.000",
+        "color": "blanco",
+        "origen": "mexico",
+        "img": "../img/calefactor_longvie_2000w.jpg"
+    },
+    {
+        "id": "AC0011",
+        "nombre": "Turbo Calefactor Liliana 2000w",
+        "categoria": "climatizacion",
+        "precio": "80.000",
+        "color": "blanco",
+        "origen": "mexico",
+        "img": "../img/turbocalefactor_liliana_2000w.jpg"
+    },
+    {
+        "id": "AC0011",
+        "nombre": "Vitroconvertor Peabody",
+        "categoria": "climatizacion",
+        "precio": "30.000",
+        "color": "negro",
+        "origen": "mexico",
+        "img": "../img/vitroconvector_peabody.jpg"
+    },
+    {
+        "id": "T001",
+        "nombre": "Televisor led Hisense 32'",
+        "categoria": "imagen y sonido",
+        "precio": "70.000",
+        "color": "negro",
+        "origen": "Argentina",
+        "img": "../img/tv_32_Hisense.jpg"
+    },
+    {
+        "id": "T002",
+        "nombre": "Televisor led Hisense 43'",
+        "categoria": "imagen y sonido",
+        "precio": "90.000",
+        "color": "negro",
+        "origen": "Argentina",
+        "img": "../img/tv_43_Hisense.jpg"
+    },
+    {
+        "id": "T003",
+        "nombre": "Televisor led Hisense 50'",
+        "categoria": "imagen y sonido",
+        "precio": "140.000",
+        "color": "negro",
+        "origen": "Argentina",
+        "img": "../img/tv_50_Hisense.jpg"
+    },
+    {
+        "id": "T004",
+        "nombre": "Televisor led Hisense 55'",
+        "categoria": "imagen y sonido",
+        "precio": "190.000",
+        "color": "negro",
+        "origen": "Argentina",
+        "img": "../img/tv_55_Hisense.jpg"
+    },
+    {
+        "id": "T005",
+        "nombre": "Televisor led Hisense 65'",
+        "categoria": "imagen y sonido",
+        "precio": "320.000",
+        "color": "negro",
+        "origen": "Argentina",
+        "img": "../img/tv_65_Hisense.jpg"
+    },
+    {
+        "id": "T006",
+        "nombre": "Televisor led Hisense 120'",
+        "categoria": "imagen y sonido",
+        "precio": "1.500.000",
+        "color": "negro",
+        "origen": "Argentina",
+        "img": "../img/tv_120_Hisense.jpg"
+    },
+    {
+        "id": "T007",
+        "nombre": "Televisor led Samsung 55'",
+        "categoria": "imagen y sonido",
+        "precio": "250.000",
+        "color": "negro",
+        "origen": "Argentina",
+        "img": "../img/tv_55_samsung.jpg"
+    },
+    {
+        "id": "T008",
+        "nombre": "Televisor led Samsung 65'",
+        "categoria": "imagen y sonido",
+        "precio": "500.000",
+        "color": "negro",
+        "origen": "Argentina",
+        "img": "../img/tv_65_samsung.jpg"
+    },
+    {
+        "id": "T009",
+        "nombre": "Televisor led Noblex 75'",
+        "categoria": "imagen y sonido",
+        "precio": "900.000",
+        "color": "negro",
+        "origen": "Argentina",
+        "img": "../img/tv_75_noblex.jpg"
+    },
+    {
+        "id": "T0010",
+        "nombre": "Televisor led Lg 77'",
+        "categoria": "imagen y sonido",
+        "precio": "900.000",
+        "color": "negro",
+        "origen": "Argentina",
+        "img": "../img/tv_77_Lg.jpg"
+    },
+    {
+        "id": "Co001",
+        "nombre": "Sony Play Station 3",
+        "categoria": "imagen y sonido",
+        "precio": "90.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/ps3.jpg"
+    },
+    {
+        "id": "Co002",
+        "nombre": "Sony Play Station 4",
+        "categoria": "imagen y sonido",
+        "precio": "140.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/ps4.jpg"
+    },
+    {
+        "id": "Co003",
+        "nombre": "Sony Play Station 5",
+        "categoria": "imagen y sonido",
+        "precio": "350.000",
+        "color": "blanco",
+        "origen": "China",
+        "img": "../img/ps5.jpg"
+    },
+    {
+        "id": "Co004",
+        "nombre": "Xbox 360",
+        "categoria": "imagen y sonido",
+        "precio": "80.000",
+        "color": "blanco",
+        "origen": "China",
+        "img": "../img/xbox360.jpg"
+    },
+    {
+        "id": "Co005",
+        "nombre": "Xbox One S",
+        "categoria": "imagen y sonido",
+        "precio": "400.000",
+        "color": "blanco",
+        "origen": "China",
+        "img": "../img/xboxOne.jpg"
+    },
+    {
+        "id": "TA001",
+        "nombre": "Tablet Samsung A7",
+        "categoria": "informatica",
+        "precio": "70.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/tablet_samsung_A7.jpg"
+    },
+    {
+        "id": "TA002",
+        "nombre": "Tablet Samsung A7 Lte",
+        "categoria": "informatica",
+        "precio": "90.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/tablet_samsung_A7_lte.jpg"
+    },
+    {
+        "id": "TA003",
+        "nombre": "Tablet Samsung Tab8",
+        "categoria": "informatica",
+        "precio": "120.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/tablet_samsung_tab8.jpg"
+    },
+    {
+        "id": "TA004",
+        "nombre": "Tablet Lenovo 10'",
+        "categoria": "informatica",
+        "precio": "70.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/tablet_lenovo_10.jpg"
+    },
+    {
+        "id": "NOT001",
+        "nombre": "Notebook Asus i3",
+        "categoria": "informatica",
+        "precio": "250.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/notebook_asus_i3.jpg"
+    },
+    {
+        "id": "NOT002",
+        "nombre": "Notebook Bgh i5",
+        "categoria": "informatica",
+        "precio": "320.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/notebook_bgh_i5.jpg"
+    },
+    {
+        "id": "NOT003",
+        "nombre": "Notebook Lenovo i7",
+        "categoria": "informatica",
+        "precio": "500.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/notebook_lenovo_i7.jpg"
+    },
+    {
+        "id": "NOT004",
+        "nombre": "Notebook Lenovo Ryzen 3",
+        "categoria": "informatica",
+        "precio": "350.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/notebook_lenovo_ryzen3.jpg"
+    },
+    {
+        "id": "NOT005",
+        "nombre": "Notebook Lenovo Ryzen 5",
+        "categoria": "informatica",
+        "precio": "460.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/notebook_lenovo_ryzen5.jpg"
+    },
+    {
+        "id": "NOT006",
+        "nombre": "Notebook Lenovo inside",
+        "categoria": "informatica",
+        "precio": "120.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/notebook_lenovo.jpg"
+    },
+    {
+        "id": "MON001",
+        "nombre": "Monitor Lg 19'",
+        "categoria": "informatica",
+        "precio": "",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/monitor_lg_19.jpg"
+    },
+    {
+        "id": "MON002",
+        "nombre": "Monitor Lg 24'",
+        "categoria": "informatica",
+        "precio": "",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/monitor_lg_24.jpg"
+    },
+    {
+        "id": "MON003",
+        "nombre": "Monitor gamer Lg 24' ",
+        "categoria": "informatica",
+        "precio": "",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/monitor_lg_24gamer.jpg"
+    },
+    {
+        "id": "MON004",
+        "nombre": "Monitor Lg 27'",
+        "categoria": "informatica",
+        "precio": "",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/monitor_lg_27.jpg"
+    },
+    {
+        "id": "MON005",
+        "nombre": "Monitor gamer Lg 31'",
+        "categoria": "informatica",
+        "precio": "",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/monitor_lg_31gamer.jpg"
+    },
+    {
+        "id": "MON006",
+        "nombre": "Monitor curvo Samsung 27'",
+        "categoria": "informatica",
+        "precio": "",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/monitor_samsung_27curvo.jpg"
+    },
+    {
+        "id": "AU001",
+        "nombre": "Auriculares Daewo",
+        "categoria": "informatica",
+        "precio": "10.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/auriculares_daewo.jpg"
+    },
+    {
+        "id": "AU002",
+        "nombre": "Auriculares Philco",
+        "categoria": "informatica",
+        "precio": "15.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/auriculares_philco.jpg"
+    },
+    {
+        "id": "AU003",
+        "nombre": "Auriculares Sony",
+        "categoria": "informatica",
+        "precio": "30.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/auriculares_sony.jpg"
+    },
+    {
+        "id": "AU004",
+        "nombre": "Headsets Gamer Logitech g332",
+        "categoria": "informatica",
+        "precio": "50.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/headsets_logitech_g332.jpg"
+    },
+    {
+        "id": "AU005",
+        "nombre": "Headsets Gamer Logite g432",
+        "categoria": "informatica",
+        "precio": "60.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/headsets_logitech_g432.jpg"
+    },
+    {
+        "id": "AU006",
+        "nombre": "Headsets Noblex",
+        "categoria": "informatica",
+        "precio": "30.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/headsets_noblex.jpg"
+    },
+    {
+        "id": "AU007",
+        "nombre": "Headsets Phillips",
+        "categoria": "informatica",
+        "precio": "25.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/headsets_phillips.jpg"
+    },
+    {
+        "id": "Hel001",
+        "nombre": "Heladera Drean 279L",
+        "categoria": "electro hogar",
+        "precio": "130.000",
+        "color": "gris",
+        "origen": "Argentina",
+        "img": "../img/heladera_drean_279L.jpg"
+    },
+    {
+        "id": "Hel002",
+        "nombre": "Heladera Drean 359L",
+        "categoria": "electro hogar",
+        "precio": "150.000",
+        "color": "blanco",
+        "origen": "Argentina",
+        "img": "../img/heladera_drean_359L.jpg"
+    },
+    {
+        "id": "Hel003",
+        "nombre": "Heladera Drean 409L",
+        "categoria": "electro hogar",
+        "precio": "180.000",
+        "color": "blanco",
+        "origen": "Argentina",
+        "img": "../img/heladera_drean_409L.jpg"
+    },
+    {
+        "id": "Hel004",
+        "nombre": "Heladera Gafa 326L",
+        "categoria": "electro hogar",
+        "precio": "200.000",
+        "color": "blanco",
+        "origen": "Argentina",
+        "img": "../img/heladera_gafa_326L.jpg"
+    },
+    {
+        "id": "Hel005",
+        "nombre": "Heladera Samsung 321L",
+        "categoria": "electro hogar",
+        "precio": "300.000",
+        "color": "blanco",
+        "origen": "Argentina",
+        "img": "../img/heladera_samsung_321L.jpg"
+    },
+    {
+        "id": "Hel006",
+        "nombre": "Heladera Samsung 328L",
+        "categoria": "electro hogar",
+        "precio": "320.000",
+        "color": "rosa",
+        "origen": "Argentina",
+        "img": "../img/heladera_samsung_328L.jpg"
+    },
+    {
+        "id": "Hel007",
+        "nombre": "Heladera Samsung 457L",
+        "categoria": "electro hogar",
+        "precio": "415.000",
+        "color": "negro",
+        "origen": "Argentina",
+        "img": "../img/heladera_samsung_457L.jpg"
+    },
+    {
+        "id": "Hel008",
+        "nombre": "Heladera Samsung 526L",
+        "categoria": "electro hogar",
+        "precio": "500.000",
+        "color": "negro",
+        "origen": "Argentina",
+        "img": "../img/heladera_samsung_526L.jpg"
+    },
+    {
+        "id": "Hel009",
+        "nombre": "Frigobar Vondom 72L",
+        "categoria": "electro hogar",
+        "precio": "80.000",
+        "color": "blanco",
+        "origen": "Argentina",
+        "img": "../img/frigobar_vondom_72L.jpg"
+    },
+    {
+        "id": "CAF001",
+        "nombre": "Cafetera Atma",
+        "categoria": "pequeños electrodomesticos",
+        "precio": "20.000",
+        "color": "blanco",
+        "origen": "China",
+        "img": "../img/cafetera_atma.jpg"
+    },
+    {
+        "id": "CAF002",
+        "nombre": "Cafetera Electrolux",
+        "categoria": "pequeños electrodomesticos",
+        "precio": "25.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/cafetera_electrolux.jpg"
+    },
+    {
+        "id": "CAF003",
+        "nombre": "Cafetera Midea",
+        "categoria": "pequeños electrodomesticos",
+        "precio": "15.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/cafetera_midea.jpg"
+    },
+    {
+        "id": "CAF004",
+        "nombre": "Cafetera Oster",
+        "categoria": "pequeños electrodomesticos",
+        "precio": "25.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/cafetera_oster.jpg"
+    },
+    {
+        "id": "CAF005",
+        "nombre": "Cafetera Phillips",
+        "categoria": "pequeños electrodomesticos",
+        "precio": "30.000",
+        "color": "blanco",
+        "origen": "China",
+        "img": "../img/cafetera_phillips.jpg"
+    },
+    {
+        "id": "CAF006",
+        "nombre": "Cafetera Yelmo",
+        "categoria": "pequeños electrodomesticos",
+        "precio": "19.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/cafetera_yelmo.jpg"
+    },
+    {
+        "id": "TOS001",
+        "nombre": "Tostadora Atma",
+        "categoria": "pequeños electrodomesticos",
+        "precio": "15.000",
+        "color": "blanco",
+        "origen": "China",
+        "img": "../img/tostadora_atma.jpg"
+    },
+    {
+        "id": "TOS002",
+        "nombre": "Tostadora Liliana",
+        "categoria": "pequeños electrodomesticos",
+        "precio": "22.000",
+        "color": "negro",
+        "origen": "China",
+        "img": "../img/tostadora_liliana.jpg"
+    },
+    {
+        "id": "TOS003",
+        "nombre": "Tostadora SmartLife",
+        "categoria": "pequeños electrodomesticos",
+        "precio": "30.000",
+        "color": "blanco",
+        "origen": "China",
+        "img": "../img/tostadora_smartlife.jpg"
+    }
+]
