@@ -261,23 +261,58 @@ headerContainer.innerHTML = `  <header class="py-3 mb-4 border-bottom header">
     <li class="nav-item">
       <a href="#" class="nav-link link-dark px-2 a-nav">Electro Hogar</a>
     </li>
-  </ul>
-  <ul class="nav">
-    <li class="nav-item">
-      <a href="#" class="nav-link link-dark px-2">Login</a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link link-dark px-2">Sign up</a>
-    </li>
-    <li class="nav-item">
-      <div class="nav-link link-dark px-2">
-        <img class="logo-carrito" src="/img/shoppingcartbutton_99694.svg" alt="Carrito de compras">
+    </ul>
+    <div class="nav-link link-dark px-2" id="div-carrito">
+      <img class="logo-carrito" src="/img/shoppingcartbutton_99694.svg" alt="Carrito de compras">
       </div>
-    </li>
-  </ul>
-</div>
-</nav>`;
+      </div>
+      </nav>`;
 
+const heroe = document.getElementById("heroe");//heroe index
+
+heroe.innerHTML = `<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img class="bd-placeholder-img img-carrousel" width="100%" height="700" src="../img/black-friday.jpg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1></h1>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img img-carrousel" width="100%" height="700" src="../img/creatividad_BLACKFRIDAY_1_1900x.jpg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1></h1>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <img class="bd-placeholder-img img-carrousel" width="100%" height="700" src="../img/black-friday-2022-amazonn.jpg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1></h1>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      </div>`
 const footerContainer = document.getElementById("footerContainer");//footer
 
 footerContainer.innerHTML = `  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -306,52 +341,5 @@ footerContainer.innerHTML = `  <footer class="d-flex flex-wrap justify-content-b
 
 
 
-const heroe = document.getElementById("heroe");//heroe index
 
-heroe.innerHTML = `<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-<div class="carousel-indicators">
-  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
-  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-</div>
-<div class="carousel-inner">
-  <div class="carousel-item">
-    <img class="bd-placeholder-img img-carrousel" width="100%" height="700" src="../img/black-friday.jpg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
-    <div class="container">
-      <div class="carousel-caption text-start">
-        <h1>Example headline.</h1>
-        <p>Some representative placeholder content for the first slide of the carousel.</p>
-        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="carousel-item active">
-    <img class="bd-placeholder-img img-carrousel" width="100%" height="700" src="../img/creatividad_BLACKFRIDAY_1_1900x.jpg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
-    <div class="container">
-      <div class="carousel-caption">
-        <h1>Another example headline.</h1>
-        <p>Some representative placeholder content for the second slide of the carousel.</p>
-        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="carousel-item ">
-    <img class="bd-placeholder-img img-carrousel" width="100%" height="700" src="../img/black-friday-2022-amazonn.jpg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
-    <div class="container">
-      <div class="carousel-caption text-end">
-        <h1>One more for good measure.</h1>
-        <p>Some representative placeholder content for the third slide of this carousel.</p>
-        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Next</span>
-</button>
-</div>`
+
