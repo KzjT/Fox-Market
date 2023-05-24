@@ -1,70 +1,79 @@
 const stockURL = "/js/stock.json";
-const cards = document.getElementById("cardsContainer");//cards
-const divCarrito = document.getElementById("div-carrito");//div carrito
+const cards = document.getElementById("cardsContainer");
+
+const divCarrito = document.getElementById("div-carrito");
+const carritoContenido = document.getElementById("carrito-contenido");
 const carrito = [];
 
-
-
 fetch(stockURL)
-    .then(respuesta => respuesta.json())
-    .then(datos => {
-
-        datos.forEach(producto => {
-            const cards = document.getElementById("cardsContainer");//cards
-            const div = document.createElement("div");//cards
-
-            div.classList.add("div-principal");
-
-
-            div.innerHTML = `<div class="row row-cols-4 row-cols-md-3 mb-3 text-center">
-            <div class="col-md-4 div-principal">
+  .then((respuesta) => respuesta.json())
+  .then((datos) => {
+    datos.forEach((producto) => {
+      const div = document.createElement("div");
+      div.classList.add("div-principal");
+      div.innerHTML = `
+        <div class="row row-cols-4 row-cols-md-3 mb-3 text-center">
+          <div class="col-md-4 div-principal">
             <div class="card mb-4 rounded-3 shadow-sm div-principal">
-            <div class="card-header py-3 titulo-cardd">
-            <h4 class="my-0 fw-normal" id="titulo-card">${producto.nombre}</h4>
-                </div>
-                <div class="card-body">
-                <img id="img-card" src="${producto.img}" </img>
+              <div class="card-header py-3 titulo-cardd">
+                <h4 class="my-0 fw-normal" id="titulo-card">${producto.nombre}</h4>
+              </div>
+              <div class="card-body">
+                <img id="img-card" src="${producto.img}" />
                 <h4>$ ${producto.precio}</h4>
-                <button type="button" id="btn-agregar-carrito" class="w-100 btn btn-lg btn-outline-primary">Agregar al carrito</button>
-                    </div>
-                    </div>
-                    </div>`;
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary btn-agregar-carrito">Agregar al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>`;
+      cards.appendChild(div);
+
+      const btnAgregarCarrito = div.querySelector(".btn-agregar-carrito");
+      btnAgregarCarrito.addEventListener("click", () => {
+        const productoo = {
+          nombre: producto.nombre,
+          precio: producto.precio,
+          img: producto.img,
+        };
+        carrito.push(productoo);
+        console.log(carrito);
+        actualizarCarrito();
 
 
-            cards.appendChild(div);
-        });
+        
+        
+        
+    });
+});
 
-        const btnAgregarCarrito = document.getElementById("btn-agregar-carrito");
-
-        btnAgregarCarrito.addEventListener("click", () => {
-            const productoo = {
-                nombre: producto.nombre,
-                precio: producto.precio
-            }
-            carrito.push(productoo)
-
-            console.log(carrito);
-
-            actualizarCarrito();
-        });;
-
-    })
-    .catch(error => console.log(error))
-    .finally(() => console.log("proceso finalizado"));
+})
+.catch((error) => console.log(error))
+.finally(() => console.log("Proceso finalizado"));
 
 
+let carritoAbierto = false;
+
+divCarrito.addEventListener("click", () => {
+  carritoAbierto = !carritoAbierto;
+
+  if (carritoAbierto) {
+    divCarrito.classList.add("carrito-abierto");
+  } else {
+    divCarrito.classList.remove("carrito-abierto");
+  }
+});
 
 function actualizarCarrito() {
-    btnAgregarCarrito.innerHTML = '';
-};
-
-carrito.forEach(item => {
+    carritoContenido.innerHTML = "";
+  carrito.forEach((item) => {
     const carritoCard = document.createElement("div");
     carritoCard.innerHTML = `
-                 <h3>${item.nombre}</h3>
-                 <p>${item.precio}</p>  `
+        <img class="img-contenido-carrito" src="${item.img}" />
+      <h3 class="titulo-contenido-carrito">${item.nombre}</h3>
+      <p class="precio-contenido-carrito">${item.precio}</p>
+      <button class="btn-delete-carrito">- quitar</button>`;
 
-    divCarrito.appendChild(carritoCard);
-})
-
-
+      
+      carritoContenido.appendChild(carritoCard);
+  });
+}

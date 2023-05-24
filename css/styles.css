@@ -122,6 +122,56 @@
     background-image: green;
   }
 
+  .carrito {
+    position: relative;
+  }
+  
+  .carrito .carrito-contenido {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carrito.carrito-abierto .carrito-contenido {
+    display: block;
+    height: auto;
+    width: 300px;
+    font-size: 15px;
+    background-color: #00bf72;
+    overflow-y: scroll;
+  }
+  
+  .titulo-contenido-carrito{
+    font-size: 20px;
+  }
+
+  .precio-contenido-carrito{
+    font-size: 15px;
+    color:red;
+  }
+  
+  .btn-delete-carrito{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-content: space-around;
+    justify-content: right;
+    align-items: self-end;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  }
+
+
+  .img-contenido-carrito{
+    width: 250px;
+    height: auto;
+  }
+
 @media (min-width: 320px) and (max-width: 768px) {
   .img-carrousel {
     width: 100%;

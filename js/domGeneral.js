@@ -262,8 +262,10 @@ headerContainer.innerHTML = `  <header class="py-3 mb-4 border-bottom header">
       <a href="#" class="nav-link link-dark px-2 a-nav">Electro Hogar</a>
     </li>
     </ul>
-    <div class="nav-link link-dark px-2" id="div-carrito">
+    <div class="nav-link link-dark px-2 carrito" id="div-carrito">
       <img class="logo-carrito" src="/img/shoppingcartbutton_99694.svg" alt="Carrito de compras">
+      <div class="carrito-contenido" id="carrito-contenido">
+      </div>
       </div>
       </div>
       </nav>`;
