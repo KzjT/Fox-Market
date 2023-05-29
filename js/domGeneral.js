@@ -1,49 +1,55 @@
-const body = document.getElementById("headerContainer");
-
-headerContainer.innerHTML = `  <header class="py-3 mb-4 border-bottom header">
-<div class="container d-flex flex-wrap justify-content-center">
-  <a href="index.html" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
-    <img class="bi me-2" width="80" height="82" src="../img/bunnySVG.svg" alt="logo">
-    <span class="fs-4">Fox Market</span>
-  </a>
-  <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-    <input type="search" class="form-control nav-search" placeholder="Search..." aria-label="Search">
-  </form>
-</div>
-</header>
-
-<nav class="py-2 bg-body-tertiary border-bottom">
-<div class="container d-flex flex-wrap">
-  <ul class="nav me-auto asd">
-    <li class="nav-item">
-      <a href="./index.html" class="nav-link link-dark px-2 a-nav active" aria-current="page">Home</a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link link-dark px-2 a-nav">Imagen y sonido</a>
-    </li>
-    <li class="nav-item">
-      <a href="./pages/climatizacion.html" class="nav-link link-dark px-2 a-nav">Climatizacion</a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link link-dark px-2 a-nav">Electro Hogar</a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link link-dark px-2 a-nav">Pequeños Electros</a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link link-dark px-2 a-nav">Electro Hogar</a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link link-dark px-2 a-nav">Electro Hogar</a>
-    </li>
-    </ul>
-    <div class="nav-link link-dark px-2 carrito" id="div-carrito">
-      <img class="logo-carrito" src="/img/shoppingcartbutton_99694.svg" alt="Carrito de compras">
-      <div class="carrito-contenido" id="carrito-contenido">
-      </div>
-      </div>
-      </div>
+document.addEventListener("DOMContentLoaded", () => {
+    const headerContainer = document.getElementById("headerContainer");
+    const divCarrito = document.getElementById("div-carrito");
+  
+    headerContainer.innerHTML = `
+      <header class="py-3 mb-4 border-bottom header">
+        <div class="container d-flex flex-wrap justify-content-center">
+          <a href="index.html" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+            <img class="bi me-2" width="80" height="82" src="../img/bunnySVG.svg" alt="logo">
+            <span class="fs-4">Fox Market</span>
+          </a>
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+            <input type="search" class="form-control nav-search" placeholder="Search..." aria-label="Search">
+          </form>
+        </div>
+      </header>
+      <nav class="py-2 bg-body-tertiary border-bottom">
+        <div class="container d-flex flex-wrap">
+          <ul class="nav me-auto asd" id="navMenu">
+          </ul>
+          <div class="nav-link link-dark px-2 carrito" id="div-carrito">
+            <img class="logo-carrito" src="/img/shoppingcartbutton_99694.svg" alt="Carrito de compras">
+            <div class="carrito-contenido" id="carrito-contenido"></div>
+          </div>
+        </div>
       </nav>`;
+  
+    const navMenu = document.getElementById("navMenu");
+  
+    // Cargar el archivo stock.json y obtener las categorías
+    fetch("/js/stock.json")
+      .then((respuesta) => respuesta.json())
+      .then((datos) => {
+        const categorias = datos.map((producto) => producto.categoria);
+        // Eliminar duplicados de categorías
+        const categoriasUnicas = [...new Set(categorias)];
+  
+        // Crear dinámicamente los elementos <li> del menú
+        categoriasUnicas.forEach((categoria) => {
+          const li = document.createElement("li");
+          li.classList.add("nav-item");
+          const a = document.createElement("a");
+          a.href = `categorias.html?categoria=${encodeURIComponent(categoria)}`; // Redirigir a la página dinámica con la categoría como parámetro
+          a.classList.add("nav-link", "link-dark", "px-2", "a-nav");
+          a.textContent = categoria;
+          li.appendChild(a);
+          navMenu.appendChild(li);
+        });
+      })
+      .catch((error) => console.log(error));
+  
+    });
 
 
 

@@ -2,7 +2,7 @@
     {
         "id": "AC001",
         "nombre": "Aire Acondicionado Bgh 2300f",
-        "categoria": "Climatizacion",
+        "categoria": "climatizacion",
         "precio": "150.000",
         "color": "blanco",
         "origen": "Argentina",
@@ -11,7 +11,7 @@
     {
         "id": "AC002",
         "nombre": "Aire Acondicionado Bgh 3000f",
-        "categoria": "Climatizacion",
+        "categoria": "climatizacion",
         "precio": "200.000",
         "color": "",
         "origen": "Argentina",
