@@ -49,8 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>`;
         cardsContainer.appendChild(div);
   
+        
         const btnAgregarCarrito = div.querySelector(".btn-agregar-carrito");
-        btnAgregarCarrito.addEventListener("click", () => {
+        btnAgregarCarrito.addEventListener("click", (event) => {
+          event.stopPropagation(); // Detener la propagación del evento
+          
           const productoo = {
             nombre: producto.nombre,
             precio: producto.precio,
