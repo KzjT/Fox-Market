@@ -1,25 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const categoriasURL = "/js/categorias.json";
-    fetch(categoriasURL)
-      .then((respuesta) => respuesta.json())
-      .then((datos) => {
-        mostrarCategorias(datos);
-      })
-      .catch((error) => {
-        console.log(error);
+    const headerLinks = document.querySelectorAll(".a-nav");
+  
+    headerLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+        const category = link.textContent.trim().toLowerCase(); // Obtener la categoría del enlace
+  
+        // Redireccionar a la página de categoría correspondiente
+        window.location.href = `categorias.html?category=${category}`;
       });
+    });
   
-    function mostrarCategorias(categorias) {
-      const contenedorCategorias = document.getElementById("contenedorCategorias");
-      categorias.forEach((categoria) => {
-        const enlaceCategoria = document.createElement("a");
-        enlaceCategoria.href = `categoria.html?id=${categoria.id}`;
-        enlaceCategoria.textContent = categoria.nombre;
+    // Resto del código existente...
   
-        const elementoCategoria = document.createElement("li");
-        elementoCategoria.appendChild(enlaceCategoria);
-  
-        contenedorCategorias.appendChild(elementoCategoria);
-      });
-    }
   });

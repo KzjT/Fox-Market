@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   <h4 class="my-0 fw-normal" id="titulo-card">${producto.nombre}</h4>
                 </div>
                 <div class="card-body">
-                  <img id="img-card" src="${producto.img}" />
+                  <img class="img-card" id="img-card" src="${producto.img}" />
                   <h4>$ ${producto.precio}</h4>
                   <button type="button" class="w-100 btn btn-lg btn-outline-primary btn-agregar-carrito">Agregar al carrito</button>
                 </div>
@@ -33,7 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
         cards.appendChild(div);
 
         const btnAgregarCarrito = div.querySelector(".btn-agregar-carrito");
-        btnAgregarCarrito.addEventListener("click", () => {
+        btnAgregarCarrito.addEventListener("click", (event) => {
+          event.stopPropagation(); // Detener la propagación del evento
+
           const productoo = {
             nombre: producto.nombre,
             precio: producto.precio,
@@ -47,8 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         div.addEventListener("click", () => {
           // Redireccionar a la página de producto con el ID del producto
-          window.location.href = `producto.html?id=${producto.id}`
-
+          window.location.href = `producto.html?id=${producto.id}`;
         });
       });
     })
@@ -59,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   divCarrito.addEventListener("click", () => {
     carritoAbierto = !carritoAbierto;
+    actualizarCarrito(); // Actualizar el carrito al abrir o cerrar el div
 
     if (carritoAbierto) {
       divCarrito.classList.add("carrito-abierto");
@@ -85,9 +87,19 @@ document.addEventListener("DOMContentLoaded", () => {
       carritoContenido.appendChild(carritoCard);
 
       const btnDeleteItem = carritoCard.querySelector(".btn-delete-carrito");
-      btnDeleteItem.addEventListener("click", () => {
+      btnDeleteItem.addEventListener("click", (event) => {
+        event.stopPropagation(); // Detener la propagación del evento
         borrarItemCarrito(item);
       });
     });
   }
+
+  function borrarItemCarrito(item) {
+    const index = carrito.indexOf(item);
+    if (index > -1) {
+      carrito.splice(index, 1);
+      actualizarCarrito();
+    }
+  }
 });
+
