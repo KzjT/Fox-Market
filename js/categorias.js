@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const categoria = obtenerCategoriaDeURL();
+    const divCarrito = document.getElementById("div-carrito");
     if (categoria) {
       obtenerProductosPorCategoria(categoria);
     }
@@ -27,6 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
   
+    if (carritoAbierto) {
+      divCarrito.classList.add("carrito-abierto");
+    } else {
+      divCarrito.classList.remove("carrito-abierto");
+    }
+  });
+
+
     function mostrarProductos(productos) {
       const cardsContainer = document.getElementById("cardsContainer");
       productos.forEach((producto) => {
@@ -53,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const btnAgregarCarrito = div.querySelector(".btn-agregar-carrito");
         btnAgregarCarrito.addEventListener("click", (event) => {
           event.stopPropagation(); // Detener la propagación del evento
-          
+
           const productoo = {
             nombre: producto.nombre,
             precio: producto.precio,
@@ -76,4 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const cardsContainer = document.getElementById("cardsContainer");
       cardsContainer.innerHTML = "<p>No se encontraron productos para esta categoría.</p>";
     }
-  });
+  
+
+  

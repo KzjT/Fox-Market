@@ -52,6 +52,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
+    fetch("/js/stock.json")
+    .then(response => response.json())
+    .then(data => {
+      const searchInput = document.getElementById('searchInput');
+      const resultsContainer = document.getElementById('results');
+  
+      searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+  
+        // Limpiar los resultados anteriores
+        resultsContainer.textContent = '';
+  
+        // Mostrar los resultados filtrados
+        if (searchTerm.trim() !== '') {
+          data.forEach(producto => {
+            const nombre = producto.nombre.toLowerCase();
+  
+            if (nombre.startsWith(searchTerm)) {
+              const resultItem = document.createElement('div');
+              const resultLink = document.createElement('a');
+              resultLink.href = `producto.html?id=${producto.id}`; // Página del producto con su ID
+              resultLink.textContent = `${producto.nombre} - $${producto.precio}`;
+              resultItem.appendChild(resultLink);
+              resultsContainer.appendChild(resultItem);
+            }
+          });
+        }
+      });
+    });
+
 
 const footerContainer = document.getElementById("footerContainer");//footer
 

@@ -236,7 +236,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <span class="fs-4">Fox Market</span>
         </a>
         <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
-          <input type="search" class="form-control nav-search" placeholder="Search..." aria-label="Search">
+          <input type="search" id="searchInput" class="form-control nav-search" placeholder="Search..." aria-label="Search">
+          <div id="results"></div>
         </form>
       </div>
     </header>
@@ -250,6 +251,36 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       </div>
     </nav>`;
+
+    fetch("/js/stock.json")
+    .then(response => response.json())
+    .then(data => {
+      const searchInput = document.getElementById('searchInput');
+      const resultsContainer = document.getElementById('results');
+  
+      searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+  
+        // Limpiar los resultados anteriores
+        resultsContainer.textContent = '';
+  
+        // Mostrar los resultados filtrados
+        if (searchTerm.trim() !== '') {
+          data.forEach(producto => {
+            const nombre = producto.nombre.toLowerCase();
+  
+            if (nombre.startsWith(searchTerm)) {
+              const resultItem = document.createElement('div');
+              const resultLink = document.createElement('a');
+              resultLink.href = `producto.html?id=${producto.id}`; // Página del producto con su ID
+              resultLink.textContent = `${producto.nombre} - $${producto.precio}`;
+              resultItem.appendChild(resultLink);
+              resultsContainer.appendChild(resultItem);
+            }
+          });
+        }
+      });
+    });
 
   const navMenu = document.getElementById("navMenu");
 
